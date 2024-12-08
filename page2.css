@@ -1,0 +1,193 @@
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: url(https://x-team.com/hs-fs/hubfs/Software%20Testing%20Methodologies.jpg?width=2180&height=980&name=Software%20Testing%20Methodologies.jpg);
+    overflow: hidden;
+    color: #fff;
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+/* cards css start */
+
+/* From Uiverse.io by kamehame-ha */ 
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .cards .red {
+    /* background-color: #f43f5e; */
+    background: url(https://blog.testlodge.com/wp-content/uploads/2016/04/test_plan.png);
+    background-size: cover;
+  }
+  .cards .red1{
+    /* background-color: #f43f5e; */
+    background: url(https://st4.depositphotos.com/14431644/21842/i/450/depositphotos_218426422-stock-illustration-writing-note-showing-script-business.jpg);
+    background-size: cover;
+  }
+  .cards .blue1{
+    /* background-color: #f43f5e; */
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOKjVTAbr3ZU_jXs-bG1gsFNxucQZ-FlVwhQ&s);
+    background-size: cover;
+  }
+  .cards .green1{
+    /* background-color: #f43f5e; */
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDWZLI2fYo00109iaVDYJvoo9nkLKo-taoXA&s);
+    background-size: cover;
+  }
+  
+  .red .tip .a{
+    
+  }
+  
+  .cards .blue {
+    background-color: #3b82f6;
+    background: url(https://media.licdn.com/dms/image/D4D12AQEm50Kusd-jxQ/article-cover_image-shrink_600_2000/0/1667234608112?e=2147483647&v=beta&t=HkINJqTGtAhVMY2uYP3R5SbyZtJY9fE9eql8mCDmc-4);
+    background-size: cover;
+  }
+  
+  .cards .green {
+    background-color: #22c55e;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYA3ivB2VCsYTEZf26hibq40lOt_kuAd2-ug&s);
+    background-size: cover;
+  }
+  
+  .cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100px;
+    width: 250px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+  }
+  
+  .cards .card p.second-text {
+    font-size: .7em;
+  }
+  
+  .cards .card:hover {
+    transform: scale(1.1, 1.1);
+    background-position: center;
+  }
+  
+  .cards:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+  }
+  .card-container{
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+  }
+/* cards css end */
+
+/* card button css start */
+.primary-button {
+    font-family: 'Ropa Sans', sans-serif;
+       /* font-family: 'Valorant', sans-serif; */
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    border: 1px solid #0E1822;
+    padding: 0.8rem 2.1rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 531.28 200'%3E%3Cdefs%3E%3Cstyle%3E .shape %7B fill: %23FF4655 /* fill: %230E1822; */ %7D %3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpolygon class='shape' points='415.81 200 0 200 115.47 0 531.28 0 415.81 200' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    background-color: #0E1822;
+    background-size: 200%;
+    background-position: 200%;
+    background-repeat: no-repeat;
+    transition: 0.3s ease-in-out;
+    transition-property: background-position, border, color;
+    position: relative;
+    z-index: 1;
+   }
+   
+   .primary-button:hover {
+    border: 1px solid #FF4655;
+    color: white;
+    background-position: 40%;
+   }
+   
+   .primary-button:before {
+    content: "";
+    position: absolute;
+    background-color: #0E1822;
+    width: 0.2rem;
+    height: 0.2rem;
+    top: -1px;
+    left: -1px;
+    transition: background-color 0.15s ease-in-out;
+   }
+   
+   .primary-button:hover:before {
+    background-color: white;
+   }
+   
+   .primary-button:hover:after {
+    background-color: white;
+   }
+   
+   .primary-button:after {
+    content: "";
+    position: absolute;
+    background-color: #FF4655;
+    width: 0.3rem;
+    height: 0.3rem;
+    bottom: -1px;
+    right: -1px;
+    transition: background-color 0.15s ease-in-out;
+   }
+   
+   .button-borders {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+   }
+   
+   .button-borders:before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 0.5em);
+    height: 50%;
+    left: -0.3em;
+    top: -0.3em;
+    border: 1px solid #0E1822;
+    border-bottom: 0px;
+       /* opacity: 0.3; */
+   }
+   
+   .button-borders:after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 0.5em);
+    height: 50%;
+    left: -0.3em;
+    bottom: -0.3em;
+    border: 1px solid #0E1822;
+    border-top: 0px;
+       /* opacity: 0.3; */
+    z-index: 0;
+   }
+   
+   .shape {
+    fill: #0E1822;
+   }
+   
+/* card button css end */
